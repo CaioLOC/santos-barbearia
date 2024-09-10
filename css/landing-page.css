@@ -1,0 +1,54 @@
+/*Setando o tamanho e posições da div GERAL do slider*/
+.slider {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Setando tamanho e animação na div PAI das imagens*/
+.slides {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    height: 100%;
+}
+
+/*Setando tamanho na div que contém as imagens*/
+.slide {
+    min-width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/*Setando tamanho especificamente nas imagens do slider*/
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
+}
+
+/*Estilizando os botões de navegação do slider*/
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 100;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
